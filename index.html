@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Игра Жизнь</title>
+    <style>
+        #game-grid {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .cell {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Игра Жизнь</h1>
+    <div id="game-grid"></div>
+    <button onclick="startGame()">Старт</button>
+    <button onclick="stopGame()">Стоп</button>
+    <button onclick="clearGrid()">Очистить</button>
+    <button onclick="generateRandom()" >Сгенерировать рандомно</button>
+    <input type="number" placeholder="размер поля" id="size" value="10"  oninput="generateGrid()" >
+    <script src="script.js"></script>
+</body>
+</html>
